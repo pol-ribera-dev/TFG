@@ -1,0 +1,81 @@
+var oUTPUT memoria 0000
+var iNPUT memoria 0008
+var mIDA memoria 0009
+llista aSCI 30
+var x
+
+var eSTAT = 0
+
+
+
+si iNPUT == 1
+eSTAT = 0
+oUTPUT = 0
+
+per j mIDA
+    x = aSCI[j]
+    si eSTAT == 0
+        si x == 97
+            eSTAT = 1
+        I
+        si x == 98
+            eSTAT = 0
+        I
+    I
+    sino
+    si eSTAT == 1
+        si x == 97
+            eSTAT = 1
+        I
+        si x == 98
+            eSTAT = 2
+        I
+    I
+    sino
+    si eSTAT == 2
+        si x == 97
+            eSTAT = 4
+        I
+        si x == 98
+            eSTAT = 3
+        I
+
+    I
+    sino
+    si eSTAT == 3
+        si x == 97
+            eSTAT = 1
+        I
+        si x == 98
+            eSTAT = 0
+        I
+
+    I
+    sino
+    si eSTAT == 4
+        si x == 97
+            eSTAT = 1
+        I
+        si x == 98
+            eSTAT = 2
+        I
+
+    I
+    sino
+        oUTPUT = 3
+    I
+    I
+    I
+    I
+    I
+
+I
+
+si eSTAT == 3 o eSTAT == 4
+oUTPUT = 1
+I
+sino
+oUTPUT = 2
+I
+I
+actualitza

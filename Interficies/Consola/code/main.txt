@@ -1,0 +1,24 @@
+var a = 0
+var b = 8
+var d = 3
+var e = 4
+var fIBP
+var fIBB
+var rES
+var rAND
+var nUME = 6
+llista c 10
+
+var oUTPUT memoria 0000
+var iNPUT memoria 0008
+
+per j nUME
+ c[j] = j
+I
+
+
+b ves RANDOM
+oUTPUT = b
+b = 0
+actualitza
+

@@ -1,0 +1,10 @@
+var oUTPUT memoria 0000
+var iNPUT memoria 0008
+var d
+var b
+var a
+var rES
+
+a = iNPUT
+oUTPUT ves FACTORIAL a
+actualitza

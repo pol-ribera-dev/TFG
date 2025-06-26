@@ -1,0 +1,31 @@
+var oUTPUT memoria 0000
+var oUTPUTT memoria 0001
+var oUTPUTTT memoria 0002
+var oUTPUTTTT memoria 0003
+var oUTPUTTTTT memoria 0004
+var oUTPUTTTTTT memoria 0005
+var oUTPUTTTTTTT memoria 0006
+var oUTPUTTTTTTTT memoria 0007
+var iNPUT memoria 0008
+var iNPUTT memoria 0009
+var iNPUTTT memoria 000A
+var iNPUTTTT memoria 000B
+var iNPUTTTTT memoria 000C
+var iNPUTTTTTT memoria 000D
+var iNPUTTTTTTT memoria 000E
+var iNPUTTTTTTTT memoria 000F
+
+
+oUTPUT = iNPUT + 1
+oUTPUTT = iNPUTT+ 1
+oUTPUTTT = iNPUTTT+ 1
+oUTPUTTTT = iNPUTTTT+ 1
+oUTPUTTTTT = iNPUTTTTT+ 1
+oUTPUTTTTTT = iNPUTTTTTT+ 1
+oUTPUTTTTTTT = iNPUTTTTTTT+ 1
+oUTPUTTTTTTTT = iNPUTTTTTTTT+ 1
+
+
+actualitza
+
+

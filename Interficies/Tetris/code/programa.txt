@@ -1,0 +1,327 @@
+var x = 0
+var y = 5
+var tIPO = 1
+var rOTACIO = 0
+
+var tEMP
+
+var b
+var lINEA
+var cASELLA
+var xX
+var xACT
+
+var vALIDA
+var vALIDD
+var vALIDE
+
+var a
+var c
+var mASK
+var mASKA
+var vAR
+var q
+var z
+
+var nOU
+var vALIDR
+var lEFT memoria 0000
+var rIGHT memoria 0001
+var rOTATION memoria 0002
+llista pLAYFIELD 256
+llista tETROMINOES 56
+
+var sETER
+var uNAVEGADA = 0
+
+si uNAVEGADA == 0
+    uNAVEGADA = 1
+
+    tETROMINOES[0] = 0
+    tETROMINOES[1] = 228
+    tETROMINOES[2] = 4
+    tETROMINOES[3] = 196
+    tETROMINOES[4] = 4
+    tETROMINOES[5] = 224
+    tETROMINOES[6] = 4
+    tETROMINOES[7] = 100
+
+    tETROMINOES[8] = 0
+    tETROMINOES[9] = 198
+    tETROMINOES[10] = 2
+    tETROMINOES[11] = 100
+    tETROMINOES[12] = 0
+    tETROMINOES[13] = 198
+    tETROMINOES[14] = 2
+    tETROMINOES[15] = 100
+
+    tETROMINOES[16] = 0
+    tETROMINOES[17] = 204
+    tETROMINOES[18] = 0
+    tETROMINOES[19] = 204
+    tETROMINOES[20] = 0
+    tETROMINOES[21] = 204
+    tETROMINOES[22] = 0
+    tETROMINOES[23] = 204
+
+    tETROMINOES[24] = 0
+    tETROMINOES[25] = 108
+    tETROMINOES[26] = 4
+    tETROMINOES[27] = 98
+    tETROMINOES[28] = 0
+    tETROMINOES[29] = 108
+    tETROMINOES[30] = 4
+    tETROMINOES[31] = 98
+
+    tETROMINOES[32] = 0
+    tETROMINOES[33] = 226
+    tETROMINOES[34] = 4
+    tETROMINOES[35] = 76
+    tETROMINOES[36] = 8
+    tETROMINOES[37] = 224
+    tETROMINOES[38] = 6
+    tETROMINOES[39] = 68
+
+    tETROMINOES[40] = 0
+    tETROMINOES[41] = 232
+    tETROMINOES[42] = 12
+    tETROMINOES[43] = 68
+    tETROMINOES[44] = 2
+    tETROMINOES[45] = 224
+    tETROMINOES[46] = 4
+    tETROMINOES[47] = 70
+
+    tETROMINOES[48] = 0
+    tETROMINOES[49] = 240
+    tETROMINOES[50] = 68
+    tETROMINOES[51] = 68
+    tETROMINOES[52] = 0
+    tETROMINOES[53] = 240
+    tETROMINOES[54] = 68
+    tETROMINOES[55] = 68
+
+    per iNICIALITZACIO 1 22
+        sETER = iNICIALITZACIO * 11 - 1
+        pLAYFIELD[sETER] = 255
+    I
+    per iNICIALITZACIOO 0 9
+        sETER = iNICIALITZACIOO + 243
+        pLAYFIELD[sETER] = 255
+    I
+I
+
+
+vALIDA = 0
+vALIDE = 0
+vALIDD = 0
+per u 0 1 ;pintar peza
+vAR = tIPO - 1
+a = peça vAR rOTACIO u
+mASK = 1
+per jJ 0 7
+vAR = a i mASK
+si no vAR == 0
+
+    vAR = jJ % 4
+    q = y + 2 - vAR
+
+
+    vAR = jJ / 4
+    z = x + 1 - vAR - 2
+    vAR = u + u
+    z = z + vAR
+    pinta(z,q,tIPO)
+
+    xX = q - 1
+    b = mira(z, xX)
+    b = b == 0
+    vALIDE = vALIDE + b
+
+    xX = q + 1
+    b = mira(z, xX)
+    b = b == 0
+    vALIDD = vALIDD + b
+
+    si mASK < 100
+    mASKA = mASK + mASK
+    vAR = a i mASKA
+    vAR = no vAR == 0
+    vALIDD = vALIDD + vAR
+    I
+
+
+    xX = z + 1
+    b = mira(xX, q)
+    b = b == 0
+    vALIDA = vALIDA + b
+
+    si mASK < 10
+    mASKA = mASK + mASK
+    mASKA = mASKA + mASKA
+    mASKA = mASKA + mASKA
+    mASKA = mASKA + mASKA
+    vAR = a i mASKA
+    vAR = no vAR == 0
+    vALIDA = vALIDA + vAR
+    I
+
+
+I
+mASK = mASK + mASK
+I
+I
+
+
+actualitza
+
+
+si no vALIDA == 4
+
+
+si  2 >= x
+per j 0 9
+per aY 0 19
+
+pinta(aY, j, tIPO)
+actualitza
+
+I
+I
+I
+sino
+
+vAR = 0
+
+
+per fF 0 3
+xX = x + 1 - fF
+
+si xX < 20
+
+lINEA = 0
+per h 0 9
+cASELLA = mira(xX,h)
+b = cASELLA == 0
+lINEA = lINEA + b
+I
+
+si lINEA == 0
+
+fF = fF - 1
+per iTER 0 19
+
+xACT = xX - 1
+lINEA = 0
+
+per w 0 9
+cASELLA = mira(xACT,w)
+b = cASELLA == 0
+lINEA = lINEA + b
+pinta(xX,w,cASELLA)
+I
+xX = xX - 1
+si lINEA == 10
+surt iTER
+I
+I
+I
+I
+I
+
+x = 0
+y = 5
+rOTACIO = 0
+tIPO = aleatori
+tIPO = tIPO + 1
+I
+I
+sino
+
+per uU 0 1
+mASK = 1
+vAR = tIPO - 1
+a = peça vAR rOTACIO uU
+per jJJ 0 7
+vAR = a i mASK
+
+si no vAR == 0
+
+    vAR = jJJ % 4
+    q = y + 2 - vAR
+
+
+    vAR = jJJ / 4
+    z = x + 1 - vAR - 2
+    vAR = uU + uU
+    z = z + vAR
+    pinta(z,q,0)
+I
+mASK = mASK + mASK
+I
+I
+x = x + 1
+I
+
+
+
+
+si lEFT == 1
+
+si vALIDE == 4
+y = y-1
+x = x - 1
+I
+I
+sino
+si rIGHT == 1
+
+si vALIDD == 4
+y = y + 1
+x = x - 1
+I
+I
+sino
+
+si rOTATION == 1
+x = x - 1
+vALIDR = 1
+nOU = (rOTACIO + 1) % 4
+per uUU 0 1
+vAR = tIPO - 1
+a = peça vAR rOTACIO uUU
+c = peça vAR nOU uUU
+mASK = 1
+
+per jJJJ 0 7
+vAR = c i mASK
+si no vAR == 0
+    vAR = jJJJ % 4
+    q = y + 2 - vAR
+
+    vAR = jJJJ / 4
+    z = x + 1 - vAR - 2
+    vAR = uUU + uUU
+    z = z + vAR
+    b = mira(z,q)
+    si no b == 0
+    vAR = a i mASK
+    si vAR == 0
+    vALIDR = 0
+    I
+    I
+
+I
+mASK = mASK + mASK
+I
+I
+
+si vALIDR
+rOTACIO = nOU
+I
+sino
+x = x + 1
+I
+I
+I
+I
+

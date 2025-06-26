@@ -1,0 +1,13 @@
+funcio FACTORIAL
+    si parametre (1) > 1
+
+        d = parametre (1) - 1
+        b ves FACTORIAL d
+        rES = b * parametre (1)
+        retorna rES
+    I
+    sino
+        retorna 1
+    I
+    retorna 0
+I

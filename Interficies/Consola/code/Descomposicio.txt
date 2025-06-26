@@ -1,0 +1,105 @@
+var a
+var oUTPUT memoria 0000
+var oUTPUTT memoria 0001
+var oUTPUTTT memoria 0002
+var oUTPUTTTT memoria 0003
+var oUTPUTTTTT memoria 0004
+var oUTPUTTTTTT memoria 0005
+var oUTPUTTTTTTT memoria 0006
+var oUTPUTTTTTTTT memoria 0007
+var iNPUT memoria 0008
+
+a = iNPUT
+per j 2 127
+
+si a % j == 0
+   oUTPUT = j
+   a = a/j
+   surt j
+I
+I
+si a > 1
+per jJ 2 127
+
+si a % jJ == 0
+   oUTPUTT = jJ
+   a = a/jJ
+   surt jJ
+I
+I
+si a > 1
+per jJJ 2 127
+
+si a % jJJ == 0
+   oUTPUTTT = jJJ
+   a = a/jJJ
+   surt jJJ
+I
+I
+si a > 1
+per jJJJ 2 127
+
+si a % jJJJ == 0
+   oUTPUTTTT = jJJJ
+   a = a/jJJJ
+   surt jJJJ
+I
+I
+si a > 1
+per h 2 127
+
+si a % h == 0
+   oUTPUTTTTT = h
+   a = a/h
+   surt h
+I
+I
+si a > 1
+per hH 2 127
+
+si a % hH == 0
+
+   oUTPUTTTTTT = hH
+   a = a/hH
+   surt hH
+I
+I
+si a > 1
+per v 2 127
+
+si a % v == 0
+
+   oUTPUTTTTTTT = v
+   a = a/v
+   surt v
+I
+I
+si a > 1
+per q 2 127
+
+si a % q == 0
+
+   oUTPUTTTTTTTT = q
+   a = a/q
+   surt q
+I
+I
+
+I
+I
+I
+I
+I
+I
+I
+actualitza
+
+
+oUTPUT = 1
+oUTPUTT = 1
+oUTPUTTT = 1
+oUTPUTTTT = 1
+oUTPUTTTTT = 1
+oUTPUTTTTTT = 1
+oUTPUTTTTTTT = 1
+oUTPUTTTTTTTT = 1

@@ -1,0 +1,58 @@
+funcio FIB
+
+    si  2 < parametre (1)
+
+        fIBB = parametre (1) - 1
+        fIBP ves FIB fIBB
+        parametre (2) = fIBP
+        fIBB = parametre (1) - 2
+        fIBP ves FIB fIBB
+        parametre (3) = fIBP
+        rES = parametre (2) + parametre (3)
+        retorna rES
+    I
+    sino
+    retorna 1
+    I
+
+I
+
+funcio RANDOM
+    rAND = aleatori
+    si rAND == 0
+        a ves RANDOM
+        retorna a
+    I
+    sino
+        si rAND % 2 ==0
+            retorna 2
+        I
+        sino
+            retorna 1
+        I
+    I
+I
+
+
+funcio POTENCIA
+    a = 1
+    b = parametre(2)
+    per x b
+        a = a * parametre(1)
+    I
+    retorna a
+I
+
+
+funcio HOLA
+    si 1 == parametre (3)
+        retorna 1
+    I
+    sino
+        d = parametre (3) - 1
+        b ves HOLA d d d
+        rES = b + parametre (3)
+        retorna rES
+
+    I
+I

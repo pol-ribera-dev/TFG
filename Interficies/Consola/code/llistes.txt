@@ -1,0 +1,12 @@
+var b
+var a
+llista c 10
+var oUTPUT memoria 0000
+var iNPUT memoria 0008
+
+per j 1 6
+    c[j] = j
+I
+
+oUTPUT = c[iNPUT]
+actualitza
