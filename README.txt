@@ -1,8 +1,9 @@
 En aquest projecte es crea un llenguatge de alt nivell per executar codi a partir d'una simulació de peces del Tetris.
-Està tot explicat en la memòria del treball
+Està tot explicat en la memòria del treball.
+
+Aquesta és una extenció al treball fet per MeatFighter que es pot trobar a: https://meatfighter.com/tetromino-computer/
 
 Passos per fer l'execució:
-
 
 Fer clone de https://github.com/meatfighter/tetromino-computer
 
